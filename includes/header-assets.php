@@ -7,4 +7,3 @@
 <script>
   // Google Analytics
 </script>
-<?php include "navigation.php" ?>

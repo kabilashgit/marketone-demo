@@ -11,7 +11,7 @@
 <!-- Favicon -->
 <link rel="shortcut icon" href="/favicon.ico"/>
 <!-- Page Title and Description -->
-<title><?= $data['meta']['title']?> | Company Name</title>
+<title><?= $data['meta']['title']?> | MarketOne</title>
 <meta name="description" content="<?= $data['meta']['page_desc']?>">
 <meta name="copyright" content="">
 <!-- Facebook -->

@@ -5,3 +5,99 @@
 @import "~bootstrap";
 @import "global";
 @import "section-styles/header-banner";
+
+.profile {
+  @include breakpoints-max(md) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 1px solid rgba($body-gray, .5);
+    &:last-child {
+      border-bottom: 1px solid rgba($body-gray, .3);
+    }
+  }
+
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+
+    img {
+      padding-bottom: 2px;
+    }
+  }
+}
+
+form {
+  @include breakpoints-max(md) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .form-group {
+    margin-bottom: 8px;
+
+    label {
+      font-size: 11px;
+      font-weight: bold;
+      margin-bottom: 3px;
+    }
+
+    .btn {
+      color: $white;
+      text-align: center;
+      padding-left: 50px;
+      padding-right: 50px;
+      margin-top: 26px;
+    }
+
+    span.is-invalid {
+      color: $red;
+      font-size: 12px;
+    }
+  }
+}
+
+footer {
+  background-color: $blue;
+  @include breakpoints-max(md) {
+    .footer-nav {
+      padding: 15px;
+      li {
+        position: relative;
+        a {
+          border: 1px solid $white;
+          color: $white;
+          font-size: 13px;
+          text-transform: uppercase;
+          display: block;
+          border-radius: 10px;
+          padding: 10px;
+          font-weight: bold;
+          text-decoration: none;
+
+          &:after {
+            content: url("/assets/images/mobile_link_arrow.png");
+            position: absolute;
+            right: 0;
+            top: 30%;
+          }
+        }
+        margin-bottom: 10px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      margin-bottom: 0;
+    }
+  }
+
+  .copyright {
+    font-size: 12px;
+    padding: 15px 0;
+    color: $white;
+    @include breakpoints-max(md) {
+      background-color: #acacac;
+      color: $body-gray;
+    }
+  }
+}
