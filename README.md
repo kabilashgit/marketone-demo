@@ -4,7 +4,7 @@
 Simple instruction to setup
 
 ```sh
-$ git clone https://github.com/kabilashgit/static-project-template.git
+$ git clone https://github.com/kabilashgit/marketone-demo.git
 $ cd <project-Directory>
 $ npm install
 $ php -S localhost:8000
